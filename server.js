@@ -1,6 +1,3 @@
-
-require('dotenv').config();
-
 const express = require('express');
 const axios = require('axios');
 const cheerio = require('cheerio');
@@ -15,15 +12,12 @@ app.use(bodyParser.json());
 // MySQL connection setup
 // MySQL connection setup
 const connection = mysql.createConnection({
-    host: 'autorack.proxy.rlwy.net', // the correct host
-    user: 'root',                    // your MySQL user
-    password: 'EpMoZliHhYeVIEOCoDlEAwzQwQDGVHin',  // your MySQL password
-    database: 'railway',             // your database name
-    port: 14185                      // the port Railway is using
+    host: 'localhost',
+    user: 'root',
+    password: "Manisha22@1234", 
+    database: 'ShoppingCartDB'
+
 });
-
-
-
 // Connect to MySQL
 connection.connect(err => {
     if (err) {
