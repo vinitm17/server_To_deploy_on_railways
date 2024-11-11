@@ -1,0 +1,5 @@
+# Ignore test files
+test/
+*.test.js
+# Ignore node_modules
+node_modules/

@@ -1,0 +1,6 @@
+# Enforce LF line endings for text files
+* text=auto
+
+# Handle specific files (such as JSON and Markdown) to use LF
+*.json text eol=lf
+*.md text eol=lf
